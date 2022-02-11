@@ -1,19 +1,31 @@
-const cards = ["Charlie", "Samip", "Ali"];
+// const gifts = ["teddy bear", "drone", "doll"];
 
-function writeCards(cards) {
-    for (let i = 0; i < cards.length; i++) {
-      console.log(`Thank you, ${cards[i]}, for the wonderful birthday gift`);
-      debugger;
-    }
-  
-    return cards;
+// function wrapGifts(gifts) {
+//   for (let i = 0; i < gifts.length; i++) {
+//     console.log(`Wrapped ${gifts[i]} and added a bow!`);
+//     debugger;
+//   }
+
+//   return gifts;
+// }
+
+// wrapGifts(gifts);
+
+function  writeCards(names, eventName) {
+  let cards = [];
+  for (let i = 0; i < names.length; i++) {
+    cards.push(`Thank you, ${names[i]}, for the wonderful ${eventName} gift!`);
   }
-  
-  writeCards(cards);
+  return cards
+}
 
-// countdown 
+// writeCards(["Guadalupe", "Ollie", "Aki"], "surprise");
 
-let countdown = 10;
-while (countdown > 0) {
-  console.log(countdown--);
+// countdown
+
+function countDown (n) {
+  while (n > -1) {
+    console.log(n)
+    n--;
+  }
 }
